@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Accessibility</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./prism/prism.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="line-numbers">
+
+  <!-- SCROLL-TOP-BTN: stt -->
+  <div class="stt-btn">
+    &uarr;
+  </div>
+
+  <!-- HEADER -->
+  <header class="center">
+    <div class="logo"><span class="icon">?</span>HTML<span class="orange">Accessibility</span></div>
+    <nav>
+      <li><a href="#why" class="active">WHY</a></li>
+      <li><a href="#how">HOW</a></li>
+      <li><a href="#about">ABOUT</a></li>
+    </nav>
+  </header>
+
+  <!-- INTRO: something interesting about accessibility -->
+  <section id="intro" class="center">
+    <h1>Making Web accessible for <span class="orange" role="note">All</span></h1>
+    <p>A great deal of web content can be made accessible just by making sure the <span class="orange f-bold">correct</span> Hypertext Markup Language elements
+    are used for the correct purpose at all times.</p>
+  </section>
+
+  <!-- WHY: explain why it's important to build websites with accessibility -->
+  <section id="why" class="center">
+    <h2><span class="hash" aria-hidden="true" role="none">#</span>Why</h2>
+    <span class="divider" aria-hidden="true" role="none"></span>
+    <p>By making your website accessible, you are ensuring that all of your potential users, including people with
+    disabilities, have a decent user experience and are able to easily access your information. By implementing
+    accessibility best practices, you are also improving the usability of the site for all users.</p>
+    <br aria-hidden="true" role="none">
+    <p>Semantic HTML doesn't take any longer to write than non-semantic (bad) markup if you do it consistently from the start
+    of your project. Even better, semantic markup has other benefits beyond accessibility.</p>
+  </section>
+
+  <!-- HOW: explain some ways accebility can be implemented -->
+  <section id="how" class="center">
+    <h2><span class="hash" aria-hidden="true" role="none">#</span>How</h2>
+    <span class="divider" aria-hidden="true"></span>
+
+    <h3>Semantic HTML</h3>
+    <p>One way of applying accessibility is through your Semantic HTML. Semantic HTML means using the correct HTML elements as much as possible. Semantic elements means elements with meaning; if you need a button element use a <span class="code">button</span> element rather than a <span class="code">div</span></p>
+    <pre aria-hidden="true" role="none">
+      <code class="language-html">
+        &lt!-- this one -->
+        &ltbutton>Click here!&lt/button>
+
+        &lt!-- not this one -->
+        &ltdiv>Click here!&lt/div>
+      </code>
+    </pre>
+
+    <h3>Choice of Headings</h3>
+    <p>HTML heading elements range from <span class="code">&lth1></span> to <span class="code">&lth6></span>. Aside from search engines using the heading levels to correctly index your website structure, users also skim read your website by the headings. Therefore it is important to use headings to show the document structure and the relationships between different sections.</p>
+    <pre aria-hidden="true" role="none">
+      <code class="language-html">
+        &lth1>Heading 1&lt/h1>
+        &lth2>Heading 2&lt/h2>
+        &lth3>Heading 3&lt/h3>
+        &lth4>Heading 4&lt/h4>
+        &lth5>Heading 5&lt/h5>
+        &lth6>Heading 6&lt/h6>
+      </code>
+    </pre>
+
+    <h3>Using ALT text</h3>
+    <p>The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). The value of the alt attribute should describe the image:</p>
+    <pre aria-hidden="true" role="none">
+      <code class="language-html">
+        &lth1>Heading 1&lt/h1>
+        &lth2>Heading 2&lt/h2>
+        &lth3>Heading 3&lt/h3>
+        &lth4>Heading 4&lt/h4>
+        &lth5>Heading 5&lt/h5>
+        &lth6>Heading 6&lt/h6>
+      </code>
+    </pre>
+
+  </section>
+
+  <!-- ABOUT: explain why it's important to build websites with accessibility -->
+  <section id="about" class="center">
+    <h2><span class="hash" aria-hidden="true" role="none">#</span> About</h2>
+    <span class="divider" aria-hidden="true" role="none"></span>
+    <p>To learn more about accessibility and how you can make your websites more friendly for all users visit <a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML">MDN Accessibility</a> for more info. This website was coded by Ieti Lolo. You can view the source files on Github at <a href="#github">github.io/ietilolo/accessibility</a>. Thank you for your time.</p>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class="center">
+    <div id="footer-container" class="center">
+      <p>Coded with &#10084; by <a href="#ietilolo">Ieti Lolo</a> &copy; 2022</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="./prism/prism.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
